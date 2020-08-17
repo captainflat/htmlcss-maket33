@@ -313,7 +313,7 @@ li {
 }
 
 .container_img1 {
-    background-image: url("../img/section_hover/first.jpg");
+    background-image: url("./img/section_hover/first.jpg");
     background-position: -110px;
     background-repeat: no-repeat;
     position: absolute;
@@ -366,7 +366,7 @@ li {
 }
 
   .container_img2 {
-    background-image: url("../img/section_hover/second.jpg");
+    background-image: url("./img/section_hover/second.jpg");
     background-position: -125px;
     background-repeat: no-repeat;
     position: absolute;
@@ -377,7 +377,7 @@ li {
   }
 
   .container_img3 {
-    background-image: url("../img/section_hover/third.jpg");
+    background-image: url("./img/section_hover/third.jpg");
     background-position: -250px -10px;
     background-repeat: no-repeat;
     position: absolute;
