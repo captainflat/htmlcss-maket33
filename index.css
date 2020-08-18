@@ -13,7 +13,10 @@ li {
 }
 
 .header_header {
-    background-image: url(./img/header_eagle.jpg);
+    background: linear-gradient( to top, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(./img/header_eagle.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     position: relative;    
     height: 1000px;
     width: 1920px;
@@ -23,18 +26,6 @@ li {
     margin-bottom: 50px;
 }
 
-.header_header:after {
-    content: "";   
-    height: 1000px;
-    width: 1920px;  
-    position: absolute;
-    top: 0;      
-    left: 0;   
-    background: transparent;
-    background-image: linear-gradient(to top, #f1d98a, #e98283);
-    opacity: 0.9;
-    z-index: 2;
-}
 
 .header_section {
     width: 1200px;
@@ -227,6 +218,7 @@ li {
     text-transform: uppercase;
     margin: 0;
     margin-left: 22px;
+    font-weight: normal;
 }
 
 .section_articles_names_description {
@@ -320,11 +312,11 @@ li {
     width: 379px;
     height: 468px;
     z-index: 3;
-    
+    transition: right 1s linear, bottom 1s linear;
   }
 
+ 
   .third  {
-      font-weight: bold;
       text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
       position: absolute;
@@ -333,7 +325,6 @@ li {
   }
 
   .second_name {
-    font-weight: bold;
     text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
     position: absolute;
@@ -506,6 +497,7 @@ li {
 .head_contuct_us span {
     font-family: 'Roboto', sans-serif;
     color: #b3b3b3;
+    font-style: italic;
 }
 
 .form_list {
@@ -522,7 +514,7 @@ li {
     width: 455px;
     height: 52px;
     border-radius: 5px;
-    margin-bottom: 13.6px;
+    margin-bottom: 13px;
 }
 
 .list1 {
@@ -542,3 +534,6 @@ li {
     font-weight: bold;
     font-size: 18px;
 }
+
+input:invalid:not(:placeholder-shown) {border-bottom: 2px solid red;}
+input:valid:not(:placeholder-shown) {border-bottom: 2px solid green;}
