@@ -19,7 +19,7 @@ li {
     background-size: cover;
     position: relative;    
     height: 1000px;
-    width: 1920px;
+    width: 1903px;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -311,8 +311,10 @@ li {
     position: absolute;
     width: 379px;
     height: 468px;
+    right: 821px;
+    bottom: 132px;
     z-index: 3;
-    transition: right 1s linear, bottom 1s linear;
+    transition: right 0.2s linear, bottom 0.2s linear;
   }
 
  
@@ -365,6 +367,9 @@ li {
     height: 468px;
     z-index: 3;
     background-color: #95e1d3;
+    transition: right 0.2s linear, bottom 0.2s linear;
+    right: 410px;
+    bottom: 132px;
   }
 
   .container_img3 {
@@ -376,6 +381,9 @@ li {
     height: 468px;
     z-index: 3;
     background-color: #95e1d3;
+    transition: right 0.2s linear, bottom 0.2s linear;
+    right: 0;
+    bottom: 132px;
   }
 
 .container_gradient {
@@ -474,6 +482,9 @@ li {
 .contuct_us {
     height: 670px;
     width: 100%;
+    background-image: url(./img/map.png);
+    background-repeat: no-repeat;
+    background-position: 1288px 100px;
     background-color: #222222;
     display: flex;
     flex-direction: column;
@@ -512,15 +523,25 @@ li {
 
 .list {
     width: 455px;
-    height: 52px;
+    height: 50px;
     border-radius: 5px;
     margin-bottom: 13px;
 }
 
 .list1 {
-    width: 455px;
+    width: 470px;
     height: 196px;
     border-radius: 5px;
+    vertical-align: top;
+
+}
+
+.form_list_items {
+    vertical-align: top;
+}
+
+input::placeholder {
+    vertical-align: top;
 }
 
 .form_button_send {
@@ -535,5 +556,5 @@ li {
     font-size: 18px;
 }
 
-input:invalid:not(:placeholder-shown) {border-bottom: 2px solid red;}
-input:valid:not(:placeholder-shown) {border-bottom: 2px solid green;}
+input:invalid:not(:placeholder-shown) {border: 3px solid red;}
+input:valid:not(:placeholder-shown) {border: 3px solid green;}
