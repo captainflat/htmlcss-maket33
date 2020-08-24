@@ -15,12 +15,11 @@ li {
 .header_header {
     background: linear-gradient( to top, rgba(252,227,138,.9) 0%, rgba(243,129,129,.9) 100%), url(./img/header_eagle.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    /* background-position: top; */
     background-size: cover;
     position: relative;    
     height: 1000px;
     width: 1903px;
-    z-index: 1;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
